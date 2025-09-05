@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task2.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="label__wrapper">
+      <label> Result:</label>
+      <span id="result"></span>
+    </div>
+
+    <div>
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" placeholder="Enter first number" required>
+    </div>
+
+    <div>
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" placeholder="Enter second number" required>
+    </div>
+
+    <div>
+      <label for="operator">Operator:</label>
+      <select id="operator">
+        <option value="choose" style="color: gray;">Choose operator</option>
+        <option value="+">Add (+)</option>
+        <option value="-">Minus (-)</option>
+        <option value="*">Multiply (x)</option>
+        <option value="/">Divide (÷)</option>
+      </select>
+    </div>
+
+    <div>
+      <button id="calculate">Calculate</button><br>
+      <button id="reset">Reset</button>
+    </div>
+
+  </div>
+    <script src="./task2.js"></script>
+</body>
+</html>
