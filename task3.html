@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./task3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="task3.css">
 </head>
 <body>
-    <div class="container">
-        <form id="signupForm">
-            <div class="header">
-                <h1>REGISTRATION FORM</h1>
-            </div>
-            <div class="form_wrapper">
-                <div class="form-group">
-                    <label for="firstName">Ism</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                    <div class="error-message" id="firstNameError"></div>
-                </div>
-                <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                    <div class="error-message" id="lastNameError"></div>
-                </div>
-    
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="error-message" id="emailError"></div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                    <div class="error-message" id="passwordError"></div>
-                </div>
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
-                    <div class="error-message" id="confirmPasswordError"></div>
-                </div>
-                <div class="form-group">
-                    <button type="submit" id="signUp" class="signup">Singup</button>
-                </div>
-            </form>
-            </div>
+    <div class="form_header" >
+        <h2>REGISTRATION FORM</h2>
     </div>
-    <script src="./task3.js"></script>
+    <div class="container">
+        <form id="registrationForm">
+            <div class="form_wrapper">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+                <small class="error"></small>
+            </div>
+    
+            <div class="form_wrapper">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <small class="error"></small>
+            </div>
+    
+            <div class="form_wrapper">
+                <label for="password">Password</label>
+             <input type="password" id="password"  required minlength="6">
+                <small class="error"></small>
+            </div>
+    
+            <div class="form_wrapper">
+                <label for="password2">Retype Password</label>
+                <input type="password" id="password2" required>
+                <small class="error"></small>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="successMessage" class="success" style="display:none;"># Thanks for Your Registration.</p>
+    </div>
+
+  <script src="task3.js"></script>
 </body>
 </html>
